@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Users</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="p-4">
+    <!-- User Profile -->
+    <div class="border border-black container">
+      <div class="input-group mb-3 container-1 p-4">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Github username"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+          id="searchInput"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="searchButton"
+          >
+            Search User
+          </button>
+        </div>
+      </div>
+      <header class="container d-flex p-4 gap-5">
+        <div
+          class="d-flex flex-column d-inline gap-4 align-items-center"
+          id="avatar-container"
+        ></div>
+        <div class="p-2 flex-grow-1" id="profileDiv"></div>
+      </header>
+
+      <!-- Repositories Container-->
+      <main>
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="spinner-border" role="status" id="loader">
+            <span class="sr-only"></span>
+          </div>
+        </div>
+
+        <div
+          class="d-flex align-items-center justify-content-center flex-wrap m-4"
+        ></div>
+        <div class="grid" id="repo-container"></div>
+      </main>
+
+      <!-- Pagination -->
+      <div
+        class="d-flex flex-column align-items-center justify-content-center m-5"
+      >
+        <ul class="pagination justify-content-center mb-0">
+          <li>
+            <a
+              class="page-link"
+              href="#"
+              aria-label="Previous"
+              id="prevPageLink"
+            >
+              <span aria-hidden="true" class="left-dot">&laquo;</span>
+            </a>
+          </li>
+          <li><a class="page-link" href="#" data-page="1">1</a></li>
+          <li><a class="page-link" href="#" data-page="2">2</a></li>
+          <li><a class="page-link" href="#" data-page="3">3</a></li>
+          <li><a class="page-link" href="#" data-page="4">4</a></li>
+          <li><a class="page-link" href="#" data-page="5">5</a></li>
+          <li><a class="page-link" href="#" data-page="6">6</a></li>
+          <li><a class="page-link" href="#" data-page="7">7</a></li>
+          <li><a class="page-link" href="#" data-page="8">8</a></li>
+          <li><a class="page-link" href="#" data-page="9">9</a></li>
+
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next" id="nextPageLink">
+              <span aria-hidden="true" class="right-dot">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+        <div class="m-3 d-flex gap-5">
+          <button class="button">&larr; Older</button>
+          <button class="button">Newer &rarr;</button>
+        </div>
+      </div>
+    </div>
+    <script
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script defer src="./script.js"></script>
+  </body>
+</html>
